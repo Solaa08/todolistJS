@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20 bg-clip-padding bg-opacity-60 border border-gray-200"
+            style="backdrop-filter: blur(20px);">
+            <div class="max-w-md mx-auto">
+                <div class="flex justify-center">
+                    <h1 class="font-bold text-3xl">To do list JS Native</h1>
+                </div>
+                <div class="divide-y divide-gray-200">
+                    <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                        <form class="w-full max-w-none">
+                            <div class="flex items-center border-b border-blue-500 py-2">
+                                <input
+                                    class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                                    type="text" placeholder="What do you want to do ?" aria-label="Full name" id="myInput">
+                                <button
+                                    class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded"
+                                    type="button" onclick="newElement()">
+                                    Add
+                                </button>
+                            </div>
+                        </form>
+                        <ul id="myUL">
+                            <li class="checked">Learn Javascript</li>
+                            <li>Learn ReactJS</li>
+                            <li>Learn Typescript</li>
+                          </ul>
+                    </div>
+                    <div class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
+                        <!-- <p>See me on <a class="font-bold text-blue-700" href="">
+                                LinkedIn </a></p>
+                                <br> -->
+                        <p>See me on <a class="font-bold text-blue-700" href="https://github.com/Solaa08">
+                                GitHub </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
